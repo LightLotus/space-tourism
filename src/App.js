@@ -9,6 +9,10 @@ import Destmoon from "./components/Destmoon";
 import Destmars from "./components/Destmars";
 import Deseuropa from "./components/Deseuropa";
 import Desttitan from "./components/Desttitan";
+import Crewdouglas from "./components/Crewdouglas";
+import Crewmark from "./components/Crewmark";
+import Crewvictor from "./components/Crewvictor";
+import Crewanousheh from "./components/Crewanousheh";
 
 function App() {
   return (
@@ -22,7 +26,12 @@ function App() {
           <Route path="/destination/europa" element={<Deseuropa />} />
           <Route path="/destination/titan" element={<Desttitan />} />
         </Route>
-        <Route path="/crew" element={<Crew />} />
+        <Route path="/crew" element={<Crew />}>
+          <Route path="/crew/douglas" element={<Crewdouglas />} />
+          <Route path="/crew/mark" element={<Crewmark />} />
+          <Route path="/crew/victor" element={<Crewvictor />} />
+          <Route path="/crew/anousheh" element={<Crewanousheh />} />
+        </Route>
         <Route path="/technology" element={<Technology />} />
       </Routes>
     </Router>
