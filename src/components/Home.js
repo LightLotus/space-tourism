@@ -1,10 +1,18 @@
 import "../css/home.css";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="home p-10 h-[100vh]">
       <div className="grid grid-cols-2 mt-[10%]">
-        <div className="pl-10">
+        <div className="pl-10" data-aos="fade-right">
           <p className="text-[#D0D6F9] uppercase">So, you want to travel to</p>
           <p className="text-white my-10 uppercase text-9xl">Space</p>
           <p className="text-[#D0D6F9]">

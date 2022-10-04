@@ -17,7 +17,6 @@ const Crewvictor = () => {
         <p className="my-4">{datacrew.crew[2].bio}</p>
       </div>
       <img
-        data-aos="fade-left"
         src={imgvictor}
         alt=""
         className="absolute bottom-0 right-32 w-[25%]"

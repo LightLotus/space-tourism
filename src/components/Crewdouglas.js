@@ -17,7 +17,6 @@ const Crewdouglas = () => {
         <p className="my-4">{datacrew.crew[0].bio}</p>
       </div>
       <img
-        data-aos="fade-left"
         src={imgcrew}
         alt=""
         className="absolute bottom-0 right-32 w-[25%]"

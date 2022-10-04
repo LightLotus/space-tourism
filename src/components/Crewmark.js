@@ -17,7 +17,6 @@ const Crewmark = () => {
         <p className="my-4">{datacrew.crew[1].bio}</p>
       </div>
       <img
-        data-aos="fade-left"
         src={imgmark}
         alt=""
         className="absolute bottom-0 right-32 w-[25%]"

@@ -13,6 +13,9 @@ import Crewdouglas from "./components/Crewdouglas";
 import Crewmark from "./components/Crewmark";
 import Crewvictor from "./components/Crewvictor";
 import Crewanousheh from "./components/Crewanousheh";
+import Techlaunchvehicle from "./components/Techlaunchvehicle";
+import Techspaceport from "./components/Techspaceport";
+import Techspacecapsule from "./components/Techspacecapsule";
 
 function App() {
   return (
@@ -32,7 +35,14 @@ function App() {
           <Route path="/crew/victor" element={<Crewvictor />} />
           <Route path="/crew/anousheh" element={<Crewanousheh />} />
         </Route>
-        <Route path="/technology" element={<Technology />} />
+        <Route path="/technology" element={<Technology />}>
+          <Route
+            path="/technology/launchvehicle"
+            element={<Techlaunchvehicle />}
+          />
+          <Route path="/technology/spaceport" element={<Techspaceport />} />
+          <Route path="/technology/spacecapsule" element={<Techspacecapsule />} />
+        </Route>
       </Routes>
     </Router>
   );
