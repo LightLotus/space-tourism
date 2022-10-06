@@ -3,12 +3,12 @@ import { Link, Outlet } from "react-router-dom";
 
 const Destination = () => {
   return (
-    <div className="destination h-[100vh] text-white pt-[10%]">
-      <div className="grid grid-cols-2 gap-4 px-16">
-        <h1 className="uppercase">
+    <div className="destination min-h-[100vh] text-white pt-[10%]">
+      <div className="grid md:grid-cols-2 gap-4 px-16">
+        <h1 className="uppercase text-center mt-10 md:mt-0 md:text-left">
           <span>01</span>&emsp;Pick Up Your Destination
         </h1>
-        <ul className="flex mt-24 uppercase">
+        <ul className="flex md:mt-24 uppercase">
           <li className="mr-4">
             <Link to="/destination/moon">moon</Link>
           </li>

@@ -10,11 +10,11 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home p-6 md:p-10">
+    <div className="home p-6 md:p-10 md:h-[100vh]">
       <div className="grid text-center md:text-left w-full md:grid-cols-2 mt-[10%]">
         <div className="md:pl-10" data-aos="fade-right">
           <p className="text-[#D0D6F9] uppercase mt-10">So, you want to travel to</p>
-          <p className="text-white my-5 md:my-10 uppercase text-6xl md:text-9xl">Space</p>
+          <p className="text-white mb-8 md:my-10 uppercase text-8xl md:text-9xl">Space</p>
           <p className="text-[#D0D6F9]">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
