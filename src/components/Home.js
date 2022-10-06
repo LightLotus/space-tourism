@@ -10,7 +10,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home p-6 md:p-10 md:h-[100vh]">
+    <div className="home p-6 md:p-10 min-h-[100vh]">
       <div className="grid text-center md:text-left w-full md:grid-cols-2 mt-[10%]">
         <div className="md:pl-10" data-aos="fade-right">
           <p className="text-[#D0D6F9] uppercase mt-10">So, you want to travel to</p>
