@@ -1,7 +1,6 @@
 import imgmoon from "../assets/destination/image-moon.png";
 import datamoon from "../data.json";
 import AOS from "aos";
-import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
