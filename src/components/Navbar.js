@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex w-full text-white justify-between items-center p-10 fixed top-0 left-0 uppercase">
+      <div className="flex w-full text-white justify-between items-center p-6 md:p-10 fixed top-0 left-0 uppercase z-50">
         <Link to="/">
           <img src={logo} alt="" className="block w-10" />
         </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
         <ul
           className={
             nav
-              ? "flex flex-col z-[50] h-full w-3/4 fixed top-0 right-0 backdrop-blur-lg md:hidden transition-all duration-300"
+              ? "flex flex-col h-full w-3/4 fixed top-0 right-0 backdrop-blur-lg md:hidden transition-all duration-300"
               : "fixed right-[-100%]"
           }
         >
