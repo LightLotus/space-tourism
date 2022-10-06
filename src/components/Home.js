@@ -25,7 +25,7 @@ const Home = () => {
         <div className="relative">
           <Link
             to="/destination"
-            className="inline-block text-center my-10 bg-white rounded-[50%] w-40 h-40 pt-16 uppercase md:absolute top-32 left-52 hover:outline hover:outline-[2.5rem] hover:outline-[#ffffff46] transition-all duration-300 ease-in-out z-[-1]"
+            className="inline-block text-center my-10 bg-white rounded-[50%] w-40 h-40 pt-16 uppercase md:absolute top-32 left-52 hover:outline hover:outline-[2.5rem] hover:outline-[#ffffff46] transition-all duration-300 ease-in-out"
           >
             explore
           </Link>
