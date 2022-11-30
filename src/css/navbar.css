@@ -13,8 +13,30 @@
   transition: all 0.3s ease-in;
 }
 
-.navbar:hover::after {
+.navbar:hover::after, .navbar:focus::after, .navbar:active::after {
   border-bottom: 2px solid #fff;
   position: absolute;
   width: 100%;
 }
+
+.dest-menu {
+  position: relative;
+}
+
+.dest-menu::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid transparent;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  margin-bottom:  -0.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.dest-menu:hover::after, .dest-menu:focus::after, .dest-menu:active::after {
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  width: 100%;
+}
+
