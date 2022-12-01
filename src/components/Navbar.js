@@ -1,4 +1,5 @@
 import logo from "../assets/shared/logo.svg";
+import line from "../assets/line.svg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +20,8 @@ const Navbar = () => {
         <Link to="/">
           <img src={logo} alt="" className="block w-10" />
         </Link>
-        <ul className="md:flex bg-white/10 backdrop-blur-lg py-5 pr-10 right-0 absolute w-1/2 hidden">
+        <img className="md:absolute md:left-[30%] md:z-[999] w-[20rem]" src={line} alt="" />
+        <ul className="md:flex bg-white/10 backdrop-blur-lg py-5 pr-10 pl-20 right-0 absolute w-1/2 hidden">
           <li className="mx-4">
             <Link className="navbar" to="/">
               <span>00 </span>home
@@ -41,20 +43,11 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div
-          onClick={handleNav}
-          className="text-white md:hidden z-[999]"
-        >
+        <div onClick={handleNav} className="text-white md:hidden z-[999]">
           {!nav ? (
-            <FontAwesomeIcon
-              className="text-3xl"
-              icon={faBars}
-            />
+            <FontAwesomeIcon className="text-3xl" icon={faBars} />
           ) : (
-            <FontAwesomeIcon
-              className="text-3xl"
-              icon={faClose}
-            />
+            <FontAwesomeIcon className="text-3xl" icon={faClose} />
           )}
         </div>
         <ul
