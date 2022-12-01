@@ -4,3 +4,9 @@
   background-size: cover;
   background-position: center;
 }
+
+.onclick:hover,
+.onclick:active,
+.onclick:focus {
+  opacity: 1;
+}

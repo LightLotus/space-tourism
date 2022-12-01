@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="home p-6 md:p-10 min-h-[100vh]">
-      <div className="grid text-center md:text-left w-full md:grid-cols-2 mt-[10%]">
+      <div className="grid text-center md:text-left w-full md:grid-cols-2 md:mt-[4%] mt-[10%]">
         <div className="md:pl-10" data-aos="fade-right">
           <p className="text-[#D0D6F9] uppercase my-10">So, you want to travel to</p>
           <p className="text-white mb-8 md:my-10 uppercase text-8xl md:text-9xl">Space</p>

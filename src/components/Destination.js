@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./Navbar";
+import AOS from "aos";
 import data from "../data.json";
 import moon from "../assets/destination/image-moon.png";
 import mars from "../assets/destination/image-mars.png";
 import europa from "../assets/destination/image-europa.png";
 import titan from "../assets/destination/image-titan.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Destination = () => {
   const [dest, setDest] = useState(data.destinations[0]);
@@ -31,6 +31,10 @@ const Destination = () => {
     setImage(titan);
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="bg-destinationbg md:h-[100vh]">
       {data.destinations.map((dest) => {
@@ -40,7 +44,10 @@ const Destination = () => {
         <span className="text-[#505159] font-bold">01</span>
         <h2 className="ml-2">pick your destination</h2>
       </div>
-      <div className="md:grid md:grid-cols-2 text-white pt-[2rem] md:px-24">
+      <div
+        className="md:grid md:grid-cols-2 text-white pt-[2rem] md:px-24"
+        data-aos="fade-right"
+      >
         <img
           className="md:w-1/2 block mx-auto self-center w-3/5"
           src={image}
@@ -67,8 +74,12 @@ const Destination = () => {
               titan
             </li>
           </ul>
-          <h2 className="text-white text-[4rem] uppercase my-6 md:text-left text-center">{dest.name}</h2>
-          <p className="text-center md:text-left px-8 md:px-0">{dest.description}</p>
+          <h2 className="text-white text-[4rem] uppercase my-6 md:text-left text-center">
+            {dest.name}
+          </h2>
+          <p className="text-center md:text-left px-8 md:px-0">
+            {dest.description}
+          </p>
           <hr className="block mt-8 mb-4 mx-8 md:mx-0" />
           <div className="md:grid md:grid-cols-2 md:text-left text-center uppercase">
             <div>
