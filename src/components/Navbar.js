@@ -16,11 +16,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex w-full text-white justify-between items-center p-6 md:p-10 fixed top-0 left-0 uppercase z-50">
+      <div className="flex w-full text-white justify-between items-center p-6 md:p-10 absolute top-0 left-0 uppercase z-50">
         <Link to="/">
-          <img src={logo} alt="" className="block w-10" />
+          <img src={logo} alt="" className="w-10" />
         </Link>
-        <img className="md:absolute md:left-[30%] md:z-[999] w-[20rem]" src={line} alt="" />
+        <img className="md:absolute md:left-[30%] md:z-[999] w-[20rem] hidden md:inline" src={line} alt="" />
         <ul className="md:flex bg-white/10 backdrop-blur-lg py-5 pr-10 pl-20 right-0 absolute w-1/2 hidden">
           <li className="mx-4">
             <Link className="navbar" to="/">

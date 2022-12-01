@@ -32,20 +32,22 @@ const Destination = () => {
   };
 
   return (
-    <div className="bg-destinationbg h-[100vh]">
+    <div className="bg-destinationbg md:h-[100vh]">
       {data.destinations.map((dest) => {
         <h1 className="text-white mt-[20%] mx-auto">{dest.name}</h1>;
       })}
-
-      <Navbar />
-      <h2 className="text-white uppercase pt-[10%] px-24">
-        <span>01</span>
-        pick your destination
-      </h2>
-      <div className="md:grid md:grid-cols-2 text-white pt-[2rem] px-24">
-        <img className="md:w-1/2 md:block md:mx-auto self-center" src={image} alt="" />
+      <div className="text-white uppercase pt-[30%] md:pt-[10%] md:px-24 px-8 flex items-center w-[100%]">
+        <span className="text-[#505159] font-bold">01</span>
+        <h2>&emsp; pick your destination</h2>
+      </div>
+      <div className="md:grid md:grid-cols-2 text-white pt-[2rem] md:px-24">
+        <img
+          className="md:w-1/2 block mx-auto self-center w-3/5"
+          src={image}
+          alt=""
+        />
         <div>
-          <ul className="flex uppercase">
+          <ul className="flex uppercase md:justify-start justify-center md:mt-0 mt-16 mb-6">
             <li className="cursor-pointer dest-menu" onClick={handleDestMoon}>
               moon
             </li>
@@ -65,17 +67,17 @@ const Destination = () => {
               titan
             </li>
           </ul>
-          <h2 className="text-white text-[4rem] uppercase my-6">{dest.name}</h2>
-          <p>{dest.description}</p>
-          <hr className="block mt-8 mb-4"/>
-          <div className="md:grid md:grid-cols-2">
+          <h2 className="text-white text-[4rem] uppercase my-6 md:text-left text-center">{dest.name}</h2>
+          <p className="text-center md:text-left px-8 md:px-0">{dest.description}</p>
+          <hr className="block mt-8 mb-4 mx-8 md:mx-0" />
+          <div className="md:grid md:grid-cols-2 md:text-left text-center uppercase">
             <div>
               <p>avg. distance</p>
-              <p>{dest.distance}</p>
+              <p className="text-[1.5rem]">{dest.distance}</p>
             </div>
-            <div>
+            <div className="py-8 md:py-0">
               <p>est. travel time</p>
-              <p>{dest.travel}</p>
+              <p className="text-[1.5rem]">{dest.travel}</p>
             </div>
           </div>
         </div>
