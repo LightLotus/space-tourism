@@ -38,7 +38,7 @@ const Destination = () => {
       })}
       <div className="text-white uppercase pt-[30%] md:pt-[10%] md:px-24 px-8 flex items-center w-[100%]">
         <span className="text-[#505159] font-bold">01</span>
-        <h2>&emsp; pick your destination</h2>
+        <h2 className="ml-2">pick your destination</h2>
       </div>
       <div className="md:grid md:grid-cols-2 text-white pt-[2rem] md:px-24">
         <img
