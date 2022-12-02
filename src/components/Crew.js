@@ -62,10 +62,10 @@ const Crew = () => {
       </ul>
       <div className="md:pt-20 md:grid md:grid-cols-2 md:px-24 md:gap-[4rem]">
         <div className="p-8 uppercase col-start-2 col-end-3">
-          <img className="block w-1/2 mx-auto" src={crewimg} />
+          <img className="block w-1/2 mx-auto md:w-[20%] md:absolute md:bottom-0" src={crewimg} />
           <hr className="md:hidden" />
         </div>
-        <div className="mt-[6rem] md:mt-0 text-center md:text-left px-8 md:px-0 col-start-1 col-end-2 row-start-1 row-end-2">
+        <div className="mt-[6rem] md:mt-0 text-center md:text-left px-8 md:px-0 col-start-1 col-end-2 row-start-1 row-end-2" data-aos="fade-left">
           <p className="uppercase">{crew.role}</p>
           <h2 className="uppercase text-4xl my-4">{crew.name}</h2>
           <p className="py-8">{crew.bio}</p>
