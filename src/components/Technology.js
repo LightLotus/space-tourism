@@ -38,7 +38,7 @@ const Technology = () => {
           <h2 className="ml-2">space launch 101</h2>
         </div>
         <img className="block md:hidden h-[50vh] w-full my-8" src={techimg} alt=""/>
-        <div className="grid md:grid-cols-2 md:gap-[2rem] mt-[4rem] px-8">
+        <div className="grid md:grid-cols-2 md:gap-[2rem] md:mt-0 mt-[4rem] px-8 md:px-0">
           <div className="md:flex md:items-center">
             <ul className="md:block flex justify-center">
               <li
@@ -67,7 +67,7 @@ const Technology = () => {
             </div>
           </div>
           <img
-            className="md:block w-3/4 h-[70vh] justify-self-end object-contain hidden"
+            className="md:block w-3/4 h-[70vh] justify-self-end hidden"
             src={techimg}
             alt=""
           />
