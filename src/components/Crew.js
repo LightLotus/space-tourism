@@ -37,44 +37,39 @@ const Crew = () => {
   }, []);
 
   return (
-    <div className="bg-crewbg md:h-[100vh] h-[200vh] bg-no-repeat w-[100vw] text-white relative">
-      <div className="flex absolute bottom-[20%] px-24">
+    <div className="bg-crewbg bg-no-repeat w-[100vw] text-white relative py-8 md:h-[100vh]">
+      <div className="uppercase text-center md:text-left md:px-24 mt-[20%] md:mt-32">
+        <span>02</span>
+        <span className="inline-block ml-2">meet your crew</span>
+      </div>
+      <ul className="flex justify-center absolute top-[50%] md:top-[80%] left-[50%] md:left-24 translate-x-[-50%]  md:translate-x-[0] z-40">
         <span
-          className="block w-4 h-4 bg-white opacity-60 rounded-full onclick ease-in duration-300"
+          className="block w-5 h-5 bg-white rounded-full onclick"
           onClick={handleCrewDoug}
         ></span>
         <span
-          className="block mx-6 w-4 h-4 bg-white opacity-60 rounded-full onclick ease-in duration-300"
+          className="block w-5 h-5 bg-white rounded-full mx-4 onclick"
           onClick={handleCrewMark}
         ></span>
         <span
-          className="block w-4 h-4 bg-white opacity-60 rounded-full onclick ease-in duration-300"
+          className="block w-5 h-5 bg-white rounded-full onclick"
           onClick={handleCrewVictor}
         ></span>
         <span
-          className="block ml-6 w-4 h-4 bg-white opacity-60 rounded-full onclick ease-in duration-300"
+          className="block w-5 h-5 bg-white rounded-full ml-4 onclick"
           onClick={handleCrewAnou}
         ></span>
-      </div>
-      <div className="grid grid-cols-2 relative">
-        <div>
-          <div className="flex uppercase md:pt-[10%] pt-[30%] md:px-24 px-8">
-            <span className="text-[#505159] font-bold">02</span>
-            <h2 className="ml-2">meet your crew</h2>
-          </div>
-          <div className="text-white md:px-24 px-8 md:mt-0 mt-[20%]">
-            <div data-aos="fade-right">
-              <p className="text-xl uppercase my-4">{crew.role}</p>
-              <p className="uppercase my-4 text-6xl">{crew.name}</p>
-              <p className="my-4 text-[#D0D6F9]">{crew.bio}</p>
-            </div>
-          </div>
+      </ul>
+      <div className="md:pt-20 md:grid md:grid-cols-2 md:px-24 md:gap-[4rem]">
+        <div className="p-8 uppercase col-start-2 col-end-3">
+          <img className="block w-1/2 mx-auto" src={crewimg} />
+          <hr className="md:hidden" />
         </div>
-        <img
-          src={crewimg}
-          alt=""
-          className="absolute right-[10%] top-0 w-[25%]"
-        />
+        <div className="mt-[6rem] md:mt-0 text-center md:text-left px-8 md:px-0 col-start-1 col-end-2 row-start-1 row-end-2">
+          <p className="uppercase">{crew.role}</p>
+          <h2 className="uppercase text-4xl my-4">{crew.name}</h2>
+          <p className="py-8">{crew.bio}</p>
+        </div>
       </div>
     </div>
   );

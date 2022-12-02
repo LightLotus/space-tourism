@@ -5,6 +5,10 @@
   background-position: center;
 }
 
+.onclick{
+  opacity: 0.5;
+}
+
 .onclick:hover,
 .onclick:active,
 .onclick:focus {
