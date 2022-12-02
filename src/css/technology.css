@@ -4,3 +4,14 @@
   background-size: cover;
   background-position: center;
 }
+
+.tech-hover {
+  transition: all 0.3s;
+}
+
+.tech-hover:hover,
+.tech-hover:active,
+.tech-hover:focus {
+  background-color: white;
+  color: black;
+}
